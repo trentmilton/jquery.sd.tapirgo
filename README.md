@@ -15,9 +15,9 @@ Tapirus requires a token from Tapir (http://www.tapirgo.com). You can get one on
 First we need to add the jQuery Tapirus script together with the dependencies. Open default.hbs and add the following code after {{ghost_foot}}:
 
 ```
-<script src="/assets/js/moment.js"></script>  
-<script src="/assets/js/handlebars.js"></script>  
-<script src="/assets/js/jquery.tapirus.js"></script>  
+<script src="/assets/js/moment.js"></script>
+<script src="/assets/js/handlebars.js"></script>
+<script src="/assets/js/jquery.sd.tapirgo.js"></script>
 ```
 
 Then open your theme's main JavaScript file, named index.js or main.js and add the initialization code to the end of the file:
@@ -31,7 +31,7 @@ Replace yourtapirtoken with the public token you got from Tapir.
 Time for some HTML. Let's add the search results container:
 
 ```
-<div class="search-results"></div>  
+<div class="search-results"></div>
 ```
 
 You can place this inside default.hbs or index.hbs, where you want to display the search results.
@@ -39,9 +39,9 @@ You can place this inside default.hbs or index.hbs, where you want to display th
 And lastly, we'll need a searchbox:
 
 ```
-<form>  
+<form>
   <input type="search">
-</form>  
+</form>
 ```
 
 You can place the above code anywhere inside one of the templates, where you want to display the searchbox. If the input element has the type attribute set to search, Tapirus will find it by default.
@@ -49,14 +49,14 @@ You can place the above code anywhere inside one of the templates, where you wan
 # Options
 
 ```
-dateFormat: 'MMMM D, YYYY',  
+dateFormat: 'MMMM D, YYYY',
 queryFilter: function(query) {
   return query.replace(/\W/g, '');
 },
-inputSelector: 'input[type="search"]',  
-sessionStorage: false,  
-sortBy: undefined,  
-templates: {  
+inputSelector: 'input[type="search"]',
+sessionStorage: false,
+sortBy: undefined,
+templates: {
   count: '<h3 class="search-results-count">{{count}} results for <q>{{query}}</q></h3>',
   result: '<div class="search-result"><h2 class="post-title"><a href="{{link}}">{{title}}</a></h2><time class="post-date" datetime="{{published_on}}">{{date}}</div>',
 },
