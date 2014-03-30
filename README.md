@@ -10,9 +10,9 @@ This plugin is on Github as I couldn't find the original source of this plugin a
 
 The following guide is designed for those users who are using ghost, but it can work with any site that has RSS (which should really be any site right?).
 
-Tapirus requires a token from Tapir (http://www.tapirgo.com). You can get one on their website by filling in your email and the URL to your RSS feed (http://example.com/rss).
+jquery.sd.tapirgo requires a token from Tapir (http://www.tapirgo.com). You can get one on their website by filling in your email and the URL to your RSS feed (http://example.com/rss).
 
-First we need to add the jQuery Tapirus script together with the dependencies. Open default.hbs and add the following code after {{ghost_foot}}:
+First we need to add the jQuery jquery.sd.tapirgo script together with the dependencies. Open default.hbs and add the following code after {{ghost_foot}}:
 
 ```
 <script src="/assets/js/moment.js"></script>
@@ -23,7 +23,7 @@ First we need to add the jQuery Tapirus script together with the dependencies. O
 Then open your theme's main JavaScript file, named index.js or main.js and add the initialization code to the end of the file:
 
 ```
-$('.search-results').Tapirus('yourtapirtoken');
+$('.search-results').tapirgo('yourtapirtoken');
 ```
 
 Replace yourtapirtoken with the public token you got from Tapir.
@@ -44,7 +44,7 @@ And lastly, we'll need a searchbox:
 </form>
 ```
 
-You can place the above code anywhere inside one of the templates, where you want to display the searchbox. If the input element has the type attribute set to search, Tapirus will find it by default.
+You can place the above code anywhere inside one of the templates, where you want to display the searchbox. If the input element has the type attribute set to search, jquery.sd.tapirgo will find it by default.
 
 # Options
 
