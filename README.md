@@ -85,7 +85,7 @@ A string with the name of the property you want the search results to be sorted 
 
 An object with templates to be used for displaying the search count and search results. **Both** options must be present i.e. count & result.
 
-*resultsExcludeFilter*
+**resultsExcludeFilter**
 
 A string with a regex based exlude filter. This will remove any results
 
