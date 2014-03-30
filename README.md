@@ -1,5 +1,4 @@
-sdtapir
-=======
+# jquery.sd.tapirgo
 
 jQuery plugin for http://tapirgo.com/ based on the jquery.taprirus.js jQuery plugin at  http://www.metacotta.com/introducing-tapirus/ (which was not available at the time of writing).
 
@@ -9,9 +8,9 @@ This plugin is on Github as I couldn't find the original source of this plugin a
 
 # Setup
 
-What follows are the official setup instructions. If you want a user centered guide on how to setup Tapirus, you can read Add search to your Ghost blog with Tapir by Christos Matskas.
+The following guide is designed for those users who are using ghost, but it can work with any site that has RSS (which should really be any site right?).
 
-Tapirus requires a token from Tapir. You can get one on their website by filling in your email and the URL to your RSS feed (http://example.com/rss).
+Tapirus requires a token from Tapir (http://www.tapirgo.com). You can get one on their website by filling in your email and the URL to your RSS feed (http://example.com/rss).
 
 First we need to add the jQuery Tapirus script together with the dependencies. Open default.hbs and add the following code after {{ghost_foot}}:
 
