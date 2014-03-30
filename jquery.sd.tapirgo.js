@@ -1,5 +1,5 @@
 (function($) {
-	$.fn.Tapirus = function(token, options) {
+	$.fn.tapirgo = function(token, options) {
 		options = $.extend({
 			dateFormat: 'DD MMM YY',
 			queryFilter: undefined,
