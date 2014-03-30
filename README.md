@@ -62,32 +62,19 @@ templates: {
 },
 resultsExcludeFilter,
 ```
+**dateFormat:** A date format string, parsed by Moment.js and available in the search result template.
 
-A date format string, parsed by Moment.js and available in the search result template.
+**queryFilter:** A function to filter the search query. Should return a string.
 
-**queryFilter**
+**inputSelector:** A selector to find the search input.
 
-A function to filter the search query. Should return a string.
+**sessionStorage:** A boolean, indicating wheter to use session storage to cache the search. If you are using Modernizr, you can pass through Modernizr.sessionstorage.
 
-**inputSelector**
+**sortBy:** A string with the name of the property you want the search results to be sorted by, e.g. date. By default, search results are sorted by relevance.
 
-A selector to find the search input.
+**templates:** An object with templates to be used for displaying the search count and search results. **Both** options must be present i.e. count & result.
 
-**sessionStorage**
-
-A boolean, indicating wheter to use session storage to cache the search. If you are using Modernizr, you can pass through Modernizr.sessionstorage.
-
-**sortBy**
-
-A string with the name of the property you want the search results to be sorted by, e.g. date. By default, search results are sorted by relevance.
-
-**templates**
-
-An object with templates to be used for displaying the search count and search results. **Both** options must be present i.e. count & result.
-
-**resultsExcludeFilter**
-
-A string with a regex based exlude filter. This will remove any results
+**resultsExcludeFilter:** A string with a regex based exlude filter. This will remove any results
 
 # Troubleshooting
 
